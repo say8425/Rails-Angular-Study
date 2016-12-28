@@ -118,4 +118,6 @@ bower.json
 .powenv
 
 # Ignore Byebug command history file.
-.byebug_history
+.byebug_history# Added by webpack-rails
+/node_modules
+/public/webpack
