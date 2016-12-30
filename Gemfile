@@ -30,6 +30,9 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+# Authentication System
+gem 'devise', '~> 4.2.0'
+
 # Add WebPack for Angular 2
 gem 'webpack-rails', '~> 0.9.9'
 
