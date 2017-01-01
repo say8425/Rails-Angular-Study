@@ -33,6 +33,9 @@ gem 'jbuilder', '~> 2.5'
 # Authentication System
 gem 'devise', '~> 4.2.0'
 
+# Use constrains on the Active Record
+gem 'mv-postgresql', '~> 3.0.0'
+
 # Add WebPack for Angular 2
 gem 'webpack-rails', '~> 0.9.9'
 
