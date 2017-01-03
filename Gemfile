@@ -36,6 +36,9 @@ gem 'devise', '~> 4.2.0'
 # Use constrains on the Active Record
 gem 'mv-postgresql', '~> 3.0.0'
 
+# Generate Fake Data for Testing DB
+gem 'faker', '~> 1.7.2'
+
 # Add WebPack for Angular 2
 gem 'webpack-rails', '~> 0.9.9'
 
