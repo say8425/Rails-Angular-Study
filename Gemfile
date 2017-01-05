@@ -36,6 +36,9 @@ gem 'devise', '~> 4.2.0'
 # Use constrains on the Active Record
 gem 'mv-postgresql', '~> 3.0.0'
 
+# Use like on the Active Record
+gem 'activerecord-like', '~> 1.0.0'
+
 # Generate Fake Data for Testing DB
 gem 'faker', '~> 1.7.2'
 
