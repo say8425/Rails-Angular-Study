@@ -10,10 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170103095737) do
+ActiveRecord::Schema.define(version: 20170108065025) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+  enable_extension "pg_trgm"
 
   create_table "customers", force: :cascade do |t|
     t.string   "first_name", null: false
@@ -22,6 +23,7 @@ ActiveRecord::Schema.define(version: 20170103095737) do
     t.string   "username",   null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index "first_name gin_trgm_ops, last_name gin_trgm_ops, email gin_trgm_ops", name: "trgm_keyword_search_index", using: :gin
     t.index ["email"], name: "index_customers_on_email", unique: true, using: :btree
     t.index ["username"], name: "index_customers_on_username", unique: true, using: :btree
   end
